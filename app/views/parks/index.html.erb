@@ -1,0 +1,33 @@
+<h1>Listing parks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address 1</th>
+    <th>Address 2</th>
+    <th>City</th>
+    <th>Province</th>
+    <th>Country</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @parks.each do |park| %>
+  <tr>
+    <td><%= park.name %></td>
+    <td><%= park.address_1 %></td>
+    <td><%= park.address_2 %></td>
+    <td><%= park.city %></td>
+    <td><%= park.province %></td>
+    <td><%= park.country_id %></td>
+    <td><%= link_to 'Show', park %></td>
+    <td><%= link_to 'Edit', edit_park_path(park) %></td>
+    <td><%= link_to 'Destroy', park, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Park', new_park_path %>

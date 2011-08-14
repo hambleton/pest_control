@@ -1,4 +1,12 @@
 PestControl::Application.routes.draw do
+  resources :stations
+
+  resources :lines
+
+  resources :parks
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

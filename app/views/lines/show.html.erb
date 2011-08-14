@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Short name:</b>
+  <%= @line.short_name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @line.name %>
+</p>
+
+<p>
+  <b>No of stations:</b>
+  <%= @line.no_of_stations %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @line.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_line_path(@line) %> |
+<%= link_to 'Back', lines_path %>
