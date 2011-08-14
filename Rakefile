@@ -1,7 +1,7 @@
 # Add your own tasks in files placed in lib/tasks ending in .rake,
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-# Neil Hambleton (14 Aug 2011). Added this in response to a suggestion: 
+# Neil Hambleton (14 Aug 2011). Added this in response to a suggestion to fix a problem with "heroku rake db:migrate": 
 # http://stackoverflow.com/questions/6400605/heroku-rake-require-rake-dsl-definition-fix-not-working-breaking-local-rake
 require 'rake/dsl_definition'
 
