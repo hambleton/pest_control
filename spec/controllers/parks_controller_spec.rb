@@ -20,7 +20,7 @@ describe ParksController do
     
     it "should have the right title" do
     	get :index
-    	response.should have_selector ("title", :content => "Parks")
+    	response.should have_selector("title", :content => "Parks")
     end
     
   end
